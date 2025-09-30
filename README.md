@@ -39,7 +39,7 @@ docker compose up -d
 
 ## Create an order:
 ```bash
-curl -X POST http://localhost:8080/orders \
+curl -X POST http://localhost:8083/api/orders \
   -H "Content-Type: application/json" \
-  -d '{"userId": "u123", "amount": 1000.10, "product": "Phone"}'
+  -d '{"amount": 1000.10, "product": "Phone"}'
 ```
